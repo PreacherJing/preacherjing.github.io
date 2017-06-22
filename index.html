@@ -253,7 +253,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/22/使用Hexo+Github快速搭建简洁的个人博客/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/22/how-to-build-a-blog-with-hexo-on-github-pages/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jing">
@@ -272,7 +272,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/22/使用Hexo+Github快速搭建简洁的个人博客/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2017/06/22/how-to-build-a-blog-with-hexo-on-github-pages/" itemprop="url">使用Hexo+Github快速搭建简洁的个人博客</a></h1>
         
 
         <div class="post-meta">
@@ -321,8 +321,7 @@
       
         
           
-            <hr>
-<h2 id="title-使用Hexo-Github快速搭建简洁的个人博客"><a href="#title-使用Hexo-Github快速搭建简洁的个人博客" class="headerlink" title="title:使用Hexo+Github快速搭建简洁的个人博客"></a>title:使用Hexo+Github快速搭建简洁的个人博客</h2><p>通过hexo+github搭建博客简洁快速，以下记录本博客的搭建过程（本文基于mac环境）。</p>
+            <p>通过hexo+github搭建博客简洁快速，以下记录本博客的搭建过程（本文基于mac环境）。</p>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p>如果你安装过Xcode，那么应该就已经有安装git，否则去<a href="https://git-scm.com/" target="_blank" rel="external">官网</a>下载安装，这里需要用git将代码推送到github。</p>
 <h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><p>推荐使用nvm方式安装，方便管理node的不同版本。npm推荐使用淘宝的镜像加速资源访问。</p>
 <h3 id="github账号"><a href="#github账号" class="headerlink" title="github账号"></a>github账号</h3><p>创建一个github账号，并新增一个<code>username.github.io</code>仓库，username代表你在github的用户名，之后可以通过<code>https://username.github.io</code>访问自己的博客。</p>
@@ -348,7 +347,7 @@ $ INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
     repo: https://github.com/PreacherJing/preacherjing.github.io.git
 </code></pre><p>安装<code>hexo-deployer-git</code></p>
 <pre><code>$ npm install hexo-deployer-git --save
-</code></pre><p>生成静态代码并部署</p>
+</code></pre><p>生成静态代码并部署（我用的是https方式，第一次部署会需要输入github账户名和密码）</p>
 <pre><code>$ hexo g
 $ hexo d (或 hexo deploy)
 </code></pre><p>此时访问<code>https://username.github.io</code> 就可以看到我们的博客了。</p>
